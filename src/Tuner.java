@@ -1,5 +1,5 @@
 
-public class Tuner {
+public class Tuner implements Device {
 	
 	private boolean am;
 	private boolean fm;
