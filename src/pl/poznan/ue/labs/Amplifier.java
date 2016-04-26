@@ -1,10 +1,13 @@
 package pl.poznan.ue.labs;
 
-public class Amplifier {
+public class Amplifier implements Device {
+	
+ private boolean isOn = false;
+	
  public void setStereoSound(){
 	 
  }
- public int setVolume(){
+ public int setVolume(int level){
 	return 0;
 	 
  }
@@ -17,4 +20,14 @@ public class Amplifier {
  public void setCd(CdPlayer cd){
 	 
  }
+
+public void on() {
+	isOn = true;
+	
+}
+
+public void off() {
+	isOn = false;
+	
+}
 }
