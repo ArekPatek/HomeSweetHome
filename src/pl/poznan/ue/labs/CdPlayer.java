@@ -2,7 +2,8 @@ package pl.poznan.ue.labs;
 
 public class CdPlayer implements Device{
 
-	private boolean isOn;
+	private boolean isOn = false;
+	private boolean isMusicPlaying = false;
 
 	
 	@Override
@@ -19,8 +20,15 @@ public class CdPlayer implements Device{
 		System.out.println("Cd Player eject CD.");
 	}
 	
-	public void play(String cd){
-		System.out.println("Playing "+cd);
+	public String play(String cd){
+		return "Playing "+cd;
 	}
+	
+	 public void stop(){
+		 isMusicPlaying = false;
+	 }
+	 public void pause(){
+		 isMusicPlaying = false;
+	 }
 
 }

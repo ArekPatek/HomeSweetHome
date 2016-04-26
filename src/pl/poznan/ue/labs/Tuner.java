@@ -5,7 +5,7 @@ public class Tuner implements Device {
 	private boolean am;
 	private boolean fm;
 	private double frequency;
-	private boolean isOn;
+	private boolean isOn = false;
 
 	public void setAm(){
 		fm = false;

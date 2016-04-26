@@ -3,6 +3,7 @@ package pl.poznan.ue.labs;
 public class DvdPlayer implements Device {
 	
 private boolean isOn = false;
+private boolean isMusicPlaying = false;
 	
  public void eject(){
 	 
@@ -11,14 +12,15 @@ private boolean isOn = false;
  }
  public String play(String dvd){
 	 
+	 isMusicPlaying = true;	 
 	 return "Dvd "+dvd+" is being played.";
 	 
  }
  public void stop(){
-	 
+	 isMusicPlaying = false;
  }
  public void pause(){
-	 
+	 isMusicPlaying = false;
  }
  
 public void on() {

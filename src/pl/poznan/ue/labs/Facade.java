@@ -7,7 +7,7 @@ public class Facade {
 	CdPlayer cdPlayer = new CdPlayer();
 	DvdPlayer dvdPlayer = new DvdPlayer();
 	Projector projector = new Projector();
-	Lights light = new Lights();
+	Lights lights = new Lights();
 	
 	//example of facade method that turns every device on
 	public void turnAllOn(){
