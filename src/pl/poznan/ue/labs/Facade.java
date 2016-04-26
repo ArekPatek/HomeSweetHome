@@ -9,7 +9,7 @@ public class Facade {
 	Projector projector = new Projector();
 	Lights light = new Lights();
 	
-	//facade method that turns every device on
+	//example of facade method that turns every device on
 	public void turnAllOn(){
 		amplifier.on();
 		tuner.on();
